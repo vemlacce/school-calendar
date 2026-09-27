@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Календарь школы</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #f5f5f5;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://calendar.google.com/calendar/embed?src=r72.vidusskola%40gmail.com&ctz=Europe%2FRiga"></iframe>
+  <script>
+    // Инициализация Telegram Mini App
+    window.Telegram.WebApp.ready();
+    window.Telegram.WebApp.expand(); // Разворачивает окно на весь экран
+  </script>
+</body>
+</html>
